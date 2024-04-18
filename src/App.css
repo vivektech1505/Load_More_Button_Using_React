@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,168 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.text{
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.3), 0 0 0.3em rgba(1, 1, 1, 0.5);
+}
+body{
+  background-color: #666;
+}
+.container {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
+  
+  
+}
+
+.items {
+  width: 600px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+  background-color: aliceblue;
+  
+}
+
+.items img {
+  width: 250px;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.items h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.items p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+button {
+  margin-top: 20px;
+  transition: 0.3s ease-in;
+  background-color: red;
+  color: white;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 20px ;
+  transition: 0.3s ease-in;
+
+}
+button:hover{
+transition: 0.3s ease-out;
+cursor: pointer;
+}
+@media screen and (min-width: 968px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .items {
+    width: 100%;
+    padding: 10px;
+  }
+} */
+
+.text {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.3), 0 0 0.3em rgba(1, 1, 1, 0.5);
+  color: antiquewhite;
+}
+
+body {
+  background-color: #666;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 15px; 
+  box-sizing: border-box; 
+  
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  
+}
+
+.items > div {
+  width: calc(50% - 10px); 
+  margin-bottom: 20px;
+  background-color: aliceblue;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  border: none;
+  cursor: pointer;
+  
+}
+
+.items img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.items h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.items p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 20%;
+  margin: 20px auto 0; 
+  background-color: red;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 20px;
+  transition: 0.3s ease-in;
+}
+button:hover{
+  color: black;
+  transition: 0.3s ease-out;
+  background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .items > div {
+    width: 100%; 
   }
 }
